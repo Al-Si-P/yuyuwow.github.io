@@ -1,0 +1,35 @@
+h1 {
+    color: darkorange;
+    font-weight:lighter;
+    font-size: 45px;
+    font-family:'Source Han Serif CN';
+}
+
+h2 {
+    color: darkorange;
+    font-weight: lighter;
+    font-size: 45px;
+    font-family: 'Source Han Serif CN';
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 30px;
+    font-family: 'Source Han Serif CN';
+}
+
+a {
+    font-size: 20px;
+    color: #5f3706;
+}
+
+p {
+    font-size: 20px;
+    font-family: SimSun;
+}
+
+div {
+    font-size: 20px;
+    width: 90%;
+    font-family: SimSun;
+}
