@@ -1,0 +1,239 @@
+@font-face {
+    font-family: '阿里巴巴普惠体MED';
+    src: url('./AlibabaPuHuiTi-3-65-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '阿里巴巴普惠体BLA';
+    src: url('./AlibabaPuHuiTi-3-115-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '阿里巴巴普惠体EXTBOL';
+    src: url('./AlibabaPuHuiTi-3-95-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '思源宋体BOL';
+    src: url('./SourceHanSerifCN-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: '方正书宋N';
+    src: url('./FZSSK.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: '方正仿宋';
+    src: url('./FZFS.ttf') format('truetype');
+}
+
+body {
+    background-image: url("pic.png");
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+#qaa_body {
+    background-image: url("pic1.png");
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+.b {
+    width: 95%;
+    margin-left: 5%;
+    background-color: rgb(224, 202, 97, 0.75);
+    background-position: center center;
+}
+
+.qaa_b {
+    width: 95%;
+    margin-left: 5%;
+    background-color: rgb(224, 202, 97, 0.5);
+    background-position: center center;
+}
+
+#abtme_body {
+    background-image: url("pic2.png");
+    background-repeat: no-repeat;
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+.guide {
+    display: none;
+}
+
+/*标题1*/
+h1 {
+    color: darkorange;
+    font-size: 56px;
+    font-family: 阿里巴巴普惠体BLA;
+}
+
+/*标题2*/
+h2 {
+    color: darkorange;
+    font-size: 55px;
+    font-family: 阿里巴巴普惠体EXTBOL;
+    text-shadow: 2px 1px 8px #00000072;
+}
+
+/*标题3*/
+h3 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 思源宋体BOL;
+}
+
+/*链接*/
+a {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #5f3706;
+    font-family: 阿里巴巴普惠体MED;
+}
+
+/*正文*/
+p {
+    text-align: center;
+    font-size: 24px;
+    font-family: 方正书宋N;
+}
+
+button {
+    font-size: 20px;
+    color: #5f3706;
+    font-family: 阿里巴巴普惠体MED;
+    border: 2px solid #5f3706;
+}
+
+/*侧边栏*/
+.mul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    background-color: rgb(224, 202, 97);
+    height: 100%; /* 全屏高度 */
+    position: fixed;
+    overflow: auto; /* 如果导航栏选项多，允许滚动 */
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+/*侧边栏*/
+#ma {
+    display: block;
+    color: #5f3706;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+    #ma:hover {
+        background-color: rgb(255, 255, 255, 0.75);
+    }
+
+    #ma:active {
+        background-color: #808080;
+        color:white;
+    }
+/*侧边栏*/
+#left_dock {
+    height: 100%;
+    width: 100%;
+}
+
+
+#ask {
+    font-family: 阿里巴巴普惠体MED;
+}
+
+#ans {
+    font-family: 方正仿宋;
+}
+
+/* 小屏幕手机端 */
+@media (min-width: 0px) and (max-width:768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 45px;
+        text-shadow: 1px 1px 3px #00000072;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        display: unset;
+        font-size: 18px;
+    }
+
+    .b {
+        width: 90%;
+        background-color: rgb(224, 202, 97, 0.75);
+        background-position: center center;
+    }
+
+    .mdiv {
+        visibility: hidden;
+    }
+
+    .guide {
+        display: block;
+    }
+    /*#ma {
+        padding: 20px;
+    }*/
+    /*侧边栏*/
+    /*.mul {
+        width: 10%;
+    }
+    #left_dock {
+
+    }*/
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 768px) and (max-width:992px) {
+    h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 45px;
+        text-shadow: 1px 1px 3px #00000072;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .b {
+        width: 90%;
+        margin-left: 10%;
+        background-color: rgb(224, 202, 97, 0.75);
+        background-position: center center;
+    }
+    .mul {
+        width: 8%;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 992px) {
+    
+}
